@@ -1,4 +1,4 @@
-$gradient: linear-gradient(135deg, #9039c1 30%,#1939ca, #19a2ca 80%);
+$gradient: linear-gradient(135deg, #9039c1 30%,#1939ca 60%, #19a2ca 80%);
 $gradient2: linear-gradient(to right, #19a2ca, #9039c1);
 @font-face {
     src: url("Dosis.ttf");
@@ -40,7 +40,7 @@ ul {
 }
 h1 {
     color: #fff;
-    font-size: 70px;
+    font-size: 50px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     font-weight: 100;
 }
@@ -75,15 +75,29 @@ h2 {
 #header {
     position: relative;
     background: $gradient;
-    background-size: 300% 300%;
+    background-size: 400% 400%;
     animation: pozadina 15s ease-out infinite;
     height: 100vh;
-    width: 100%;
+    width: 100%; 
     z-index: 2;
-    @include flex(center);
+    @include flex(center, center, column);
+    @include h2w;
+    h2 {
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        font-size: 26px;
+        padding: 0px;
+    }
+    img {
+        width: 400px;
+    }
     a {
         color: #fff;
-    }   
+    } 
+    .dugme {
+        margin-top: 50px;
+        padding: 10px 20px;
+        font-size: 26px;
+    }
 }
 @keyframes pozadina {
     0%{background-position:0% 50%}
@@ -253,6 +267,7 @@ section {
             }
             .dugme {
                 display: none;
+                font-size: 1.1em;
             }
             p {
                 margin: 15px 0px;

@@ -43,7 +43,7 @@ ul {
 
 h1 {
   color: #fff;
-  font-size: 70px;
+  font-size: 50px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-weight: 100;
 }
@@ -86,8 +86,8 @@ h2 {
 
 #header {
   position: relative;
-  background: linear-gradient(135deg, #9039c1 30%, #1939ca, #19a2ca 80%);
-  background-size: 300% 300%;
+  background: linear-gradient(135deg, #9039c1 30%, #1939ca 60%, #19a2ca 80%);
+  background-size: 400% 400%;
   -webkit-animation: pozadina 15s ease-out infinite;
           animation: pozadina 15s ease-out infinite;
   height: 100vh;
@@ -96,10 +96,10 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -108,8 +108,30 @@ h2 {
           align-items: center;
 }
 
+#header h2 {
+  color: #fff;
+  border: none;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+#header h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 26px;
+  padding: 0px;
+}
+
+#header img {
+  width: 400px;
+}
+
 #header a {
   color: #fff;
+}
+
+#header .dugme {
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 26px;
 }
 
 @-webkit-keyframes pozadina {
@@ -409,6 +431,7 @@ section {
 
 .proj figure figcaption .dugme {
   display: none;
+  font-size: 1.1em;
 }
 
 .proj figure figcaption p {
