@@ -391,8 +391,8 @@ section {
 .proj figure figcaption {
   position: absolute;
   width: 100%;
-  height: 40px;
-  top: 160px;
+  height: 60px;
+  top: 140px;
   background: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -405,11 +405,16 @@ section {
   transition: top 0.5s ease-out, height 0.5s ease-out;
 }
 
-.proj figure .dugme {
+.proj figure figcaption .lm {
+  color: #ddd;
+  font-size: 0.8em;
+}
+
+.proj figure figcaption .dugme {
   display: none;
 }
 
-.proj figure p {
+.proj figure figcaption p {
   margin: 10px 0px;
   height: 100px;
   color: #ddd;
@@ -428,6 +433,10 @@ section {
 
 .proj:hover figcaption .dugme {
   display: inline-block;
+}
+
+.proj:hover figcaption .lm {
+  display: none;
 }
 
 #skills {
