@@ -6,6 +6,7 @@ $gradient2: linear-gradient(to right, #19a2ca, #9039c1);
 }
 html {
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 * {
     padding: 0px;
@@ -40,18 +41,21 @@ ul {
 }
 h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 2.4em;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     font-weight: 100;
 }
 h2 {
     padding: 10px;
     color: #252525;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: 200;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-image: $gradient2 100% 0;
+}
+h3 {
+    font-size: 0.9em;
 }
 .dugme {
     padding: 5px 10px;
@@ -84,7 +88,7 @@ h2 {
     @include h2w;
     h2 {
         text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-        font-size: 26px;
+        font-size: 1.3em;
         padding: 0px;
     }
     img {
@@ -95,8 +99,8 @@ h2 {
     } 
     .dugme {
         margin-top: 50px;
-        padding: 10px 20px;
-        font-size: 26px;
+        padding: 8px 20px;
+        font-size: 1.1em;
     }
 }
 @keyframes pozadina {
@@ -107,7 +111,7 @@ h2 {
 #dole {
     position: absolute;
     bottom: 10px;
-    font-size: 50px;
+    font-size: 2.5em;
     animation: dole 5s ease-out infinite;
 }
 @keyframes dole {
@@ -122,25 +126,25 @@ h2 {
 }
 #gore {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 80px;
-    height: 80px;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     @include flex(center, center, column);
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
-    font-size: 40px;
+    font-size: 2em;
     box-sizing: border-box;
     padding-bottom: 5px;
     color: #fff;
 }
 #MeniBtn, #MeniClose {
     position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 80px;
-    height: 80px;
+    top: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     @include flex(center, center, column);
 }
@@ -164,7 +168,7 @@ h2 {
     z-index: 20;
     #linija1 {
         position: absolute;
-        top: 40px;
+        top: 35px;
         left: 10px;
         width: 70%;
         height: 4%;
@@ -236,7 +240,7 @@ section {
     width: 400px;
     height: 250px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
     overflow: hidden;
     figure {
@@ -248,7 +252,7 @@ section {
         width: inherit;
         height: inherit;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 15px;
         }
         figcaption {
             position: absolute;
@@ -256,7 +260,7 @@ section {
             height: 70px;
             top: 180px;
             background: rgba(0,0,0,0.65);
-            border-radius: 0px 0px 5px 5px;
+            border-radius: 0px 0px 15px 15px;
             color: #fff;
             padding: 15px;
             text-align: center;
@@ -264,10 +268,11 @@ section {
             transition: top 0.5s ease-out, height 0.5s ease-out;
             .lm, p {
                 color: #ddd;
+                font-size: 0.8em;
             }
             .dugme {
                 display: none;
-                font-size: 1.1em;
+                font-size: 0.9em;
             }
             p {
                 margin: 15px 0px;
@@ -293,11 +298,16 @@ section {
     }
 }
 #skills {
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bgSkills.jpg");
     background-repeat: no-repeat;
     //background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 0%;
+    //background-position: 50% 0%;
     @include h2w;
     width: 100%;
+    min-height: 600px;
+}
+#links {
+    background-color: #252525;
+    min-height: 300px;
 }
