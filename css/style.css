@@ -62,7 +62,8 @@ h2 {
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .dugme {
@@ -423,11 +424,11 @@ section {
   background: rgba(0, 0, 0, 0.65);
   border-radius: 0px 0px 15px 15px;
   color: #fff;
-  padding: 15px;
+  padding: 10px 15px;
   text-align: center;
   will-change: top, height;
-  -webkit-transition: top 0.5s ease-out, height 0.5s ease-out;
-  transition: top 0.5s ease-out, height 0.5s ease-out;
+  -webkit-transition: top 0.5s ease-out, height 0.5s ease-out, padding 0.5s ease-out;
+  transition: top 0.5s ease-out, height 0.5s ease-out, padding 0.5s ease-out;
 }
 
 .proj figure figcaption .lm, .proj figure figcaption p {
@@ -451,6 +452,7 @@ section {
   top: 0px;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
 }
 
 .proj figure:hover figcaption p {
