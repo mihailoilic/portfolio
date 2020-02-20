@@ -6,6 +6,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 20px;
+  background-color: #252525;
+  color: #fff;
 }
 
 * {
@@ -18,6 +20,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 ul {
@@ -38,12 +41,13 @@ ul {
 }
 
 .okvir {
-  width: 100%;
+  width: 1400px;
   margin: 0px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
-  color: #fff;
   font-size: 2.4em;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-weight: 100;
@@ -51,7 +55,6 @@ h1 {
 
 h2 {
   padding: 10px;
-  color: #252525;
   font-size: 2em;
   font-weight: 200;
   border-bottom-width: 2px;
@@ -71,7 +74,6 @@ h3 {
   display: inline-block;
   border: 1px solid #fff;
   border-radius: 5px;
-  color: #fff;
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
 }
@@ -92,7 +94,7 @@ h3 {
 
 #header {
   position: relative;
-  background: linear-gradient(135deg, #9039c1 30%, #1939ca 60%, #19a2ca 80%);
+  background: linear-gradient(135deg, #9039c1 25%, #1939ca 50%, #19a2ca 90%);
   background-size: 400% 400%;
   -webkit-animation: pozadina 15s ease-out infinite;
           animation: pozadina 15s ease-out infinite;
@@ -115,7 +117,6 @@ h3 {
 }
 
 #header h2 {
-  color: #fff;
   border: none;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
@@ -128,10 +129,6 @@ h3 {
 
 #header img {
   width: 400px;
-}
-
-#header a {
-  color: #fff;
 }
 
 #header .dugme {
@@ -165,9 +162,9 @@ h3 {
 }
 
 #dole {
-  position: absolute;
-  bottom: 10px;
-  font-size: 2.5em;
+  position: relative;
+  bottom: -100px;
+  font-size: 2em;
   -webkit-animation: dole 5s ease-out infinite;
           animation: dole 5s ease-out infinite;
 }
@@ -175,22 +172,22 @@ h3 {
 @-webkit-keyframes dole {
   0% {
     opacity: 0;
-    bottom: 100px;
+    bottom: -40px;
   }
   20% {
     opacity: 1;
-    bottom: 10px;
+    bottom: -100px;
   }
 }
 
 @keyframes dole {
   0% {
     opacity: 0;
-    bottom: 100px;
+    bottom: -40px;
   }
   20% {
     opacity: 1;
-    bottom: 10px;
+    bottom: -100px;
   }
 }
 
@@ -216,17 +213,16 @@ h3 {
           align-items: center;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
-  font-size: 2em;
+  font-size: 1.7em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-bottom: 5px;
-  color: #fff;
 }
 
 #MeniBtn, #MeniClose {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 2%;
+  right: 2%;
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -352,7 +348,16 @@ h3 {
 #Meni ul li {
   padding: 10px;
   margin: 10px;
-  font-size: 28px;
+  font-size: 1.4em;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#Meni ul li:hover {
+  -webkit-transform: scale(1.2, 1.3);
+          transform: scale(1.2, 1.3);
 }
 
 section {
@@ -392,23 +397,23 @@ section {
   padding: 30px 0px;
 }
 
-.proj {
+#pwrapper .proj {
   width: 400px;
   height: 250px;
   margin: 20px;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-.proj figure {
+#pwrapper .proj figure {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.proj figure img {
+#pwrapper .proj figure img {
   width: inherit;
   height: inherit;
   -o-object-fit: cover;
@@ -416,14 +421,13 @@ section {
   border-radius: 15px;
 }
 
-.proj figure figcaption {
+#pwrapper .proj figure figcaption {
   position: absolute;
   width: 100%;
   height: 70px;
   top: 180px;
   background: rgba(0, 0, 0, 0.65);
   border-radius: 0px 0px 15px 15px;
-  color: #fff;
   padding: 10px 15px;
   text-align: center;
   will-change: top, height;
@@ -431,23 +435,23 @@ section {
   transition: top 0.5s ease-out, height 0.5s ease-out, padding 0.5s ease-out;
 }
 
-.proj figure figcaption .lm, .proj figure figcaption p {
+#pwrapper .proj figure figcaption .lm, #pwrapper .proj figure figcaption p {
   color: #ddd;
   font-size: 0.8em;
 }
 
-.proj figure figcaption .dugme {
+#pwrapper .proj figure figcaption .dugme {
   display: none;
   font-size: 0.9em;
 }
 
-.proj figure figcaption p {
+#pwrapper .proj figure figcaption p {
   margin: 15px 0px;
   height: 130px;
   display: none;
 }
 
-.proj figure:hover figcaption {
+#pwrapper .proj figure:hover figcaption {
   height: 250px;
   top: 0px;
   border-radius: 5px;
@@ -455,15 +459,15 @@ section {
   padding: 15px;
 }
 
-.proj figure:hover figcaption p {
+#pwrapper .proj figure:hover figcaption p {
   display: block;
 }
 
-.proj figure:hover figcaption .dugme {
+#pwrapper .proj figure:hover figcaption .dugme {
   display: inline-block;
 }
 
-.proj figure:hover figcaption .lm {
+#pwrapper .proj figure:hover figcaption .lm {
   display: none;
 }
 
@@ -471,18 +475,86 @@ section {
   background-image: url("../img/bgSkills.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  min-height: 600px;
+  background-position: 0% 0%;
 }
 
 #skills h2 {
-  color: #fff;
   border: none;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
+#swrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+#swrapper article {
+  width: 200px;
+  height: 270px;
+  margin: 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#swrapper article span {
+  font-size: 6em;
+  margin-bottom: 10px;
+}
+
+#swrapper article span.sLogo {
+  font-size: 5em;
+}
+
+#swrapper article p {
+  font-size: 0.8em;
+}
+
+#swrapper article p.high {
+  color: #23c258;
+}
+
+#swrapper article p.medium {
+  color: #d1b63e;
+}
+
+#swrapper article p.low {
+  color: #19a2ca;
+}
+
 #links {
-  background-color: #252525;
   min-height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
