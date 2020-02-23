@@ -175,7 +175,36 @@
     <section id="contact">
         <h2>Contact</h2>
         <div id="cwrapper" class="okvir">
-            
+            <form name="kontaktForma" id="forma" action="#contact" method="GET">
+                <input type="text" name="tbName" id="tbName" placeholder="Your name*" value="" />
+                <input type="email" name="tbEmail" id="tbEmail" placeholder="Your e-mail address*" value="" />
+                <input type="phone" name="tbPhone" id="tbPhone" placeholder="Your phone" value="" />
+                <textarea name="poruka" id="poruka" placeholder="Please enter your message here*"></textarea>
+                <div id="btnwrapper">
+                    <button type="submit" name="btnSubmit" id="btnSubmit"><span>Send</span></button>
+                    <button type="reset" name="btnReset" id="btnReset"><span>Reset</span></button>
+                </div>
+            </form>
+            <div id="cLinks">
+                <a href="mailto:mihailo.ilic.41.19@ict.edu.rs" target="_blank">
+                    <article>
+                        <span class="fas fa-envelope"></span>
+                        <p>Send me an e-mail</p>
+                    </article>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <article>
+                        <span class="fab fa-linkedin"></span>
+                        <p>Check out my LinkedIn profile</p>
+                    </article>
+                </a>
+                <a href="https://github.com/mihailoilic" target="_blank">
+                    <article>
+                        <span class="fab fa-github"></span>
+                        <p>Check out my Github page</p>
+                    </article>
+                </a>
+            </div>
         </div>
     </section>
     <footer id="links">

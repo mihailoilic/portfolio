@@ -69,7 +69,7 @@ h3 {
   font-weight: 500;
 }
 
-.dugme {
+.dugme, #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #cLinks article {
   padding: 5px 10px;
   display: inline-block;
   border: 1px solid #fff;
@@ -78,11 +78,11 @@ h3 {
   transition: background-color .5s;
 }
 
-.dugme:hover {
+.dugme:hover, #contact #cwrapper #forma #btnwrapper button:hover, #contact #cwrapper #cLinks article:hover {
   background-color: #fff;
 }
 
-.dugme:hover span {
+.dugme:hover span, #contact #cwrapper #forma #btnwrapper button:hover span, #contact #cwrapper #cLinks article:hover span {
   background: -webkit-gradient(linear, left top, right top, from(#19a2ca), to(#9039c1));
   background: linear-gradient(to right, #19a2ca, #9039c1);
   -webkit-background-clip: text;
@@ -131,7 +131,7 @@ h3 {
   width: 400px;
 }
 
-#header .dugme {
+#header .dugme, #header #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #header button, #header #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #header article {
   margin-top: 50px;
   padding: 8px 20px;
   font-size: 1.1em;
@@ -162,8 +162,8 @@ h3 {
 }
 
 #dole {
-  position: relative;
-  bottom: 50px;
+  position: absolute;
+  bottom: 10px;
   font-size: 2em;
   -webkit-animation: dole 5s ease-out infinite;
           animation: dole 5s ease-out infinite;
@@ -349,15 +349,15 @@ h3 {
   padding: 10px;
   margin: 10px;
   font-size: 1.4em;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #Meni ul li:hover {
-  -webkit-transform: scale(1.2, 1.3);
-          transform: scale(1.2, 1.3);
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 section {
@@ -440,7 +440,7 @@ section {
   font-size: 0.8em;
 }
 
-#pwrapper .proj figure figcaption .dugme {
+#pwrapper .proj figure figcaption .dugme, #pwrapper .proj figure figcaption #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #pwrapper .proj figure figcaption button, #pwrapper .proj figure figcaption #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #pwrapper .proj figure figcaption article {
   display: none;
   font-size: 0.9em;
 }
@@ -463,7 +463,7 @@ section {
   display: block;
 }
 
-#pwrapper .proj figure:hover figcaption .dugme {
+#pwrapper .proj figure:hover figcaption .dugme, #pwrapper .proj figure:hover figcaption #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #pwrapper .proj figure:hover figcaption button, #pwrapper .proj figure:hover figcaption #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #pwrapper .proj figure:hover figcaption article {
   display: inline-block;
 }
 
@@ -564,6 +564,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #about #awrapper img {
@@ -579,16 +581,123 @@ section {
 
 #about #awrapper p {
   margin: 30px;
+  width: 60%;
 }
 
 #contact {
-  background: linear-gradient(-30deg, #5d4ee2 30%, #9039c1);
-  min-height: 700px;
+  background: linear-gradient(135deg, #9039c1 25%, #19a2ca 100%);
 }
 
 #contact h2 {
   border: none;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+#contact #cwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px 0px;
+  max-width: 900px;
+}
+
+#contact #cwrapper #forma {
+  width: 60%;
+  font-size: 1em;
+  margin: 10px;
+}
+
+#contact #cwrapper #forma input, #contact #cwrapper #forma textarea, #contact #cwrapper #forma button {
+  font-size: inherit;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+}
+
+#contact #cwrapper #forma input:focus, #contact #cwrapper #forma textarea:focus, #contact #cwrapper #forma button:focus {
+  background: rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+#contact #cwrapper #forma textarea {
+  resize: none;
+  height: 200px;
+}
+
+#contact #cwrapper #forma #btnwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact #cwrapper #forma #btnwrapper button {
+  border: none;
+  width: 100px;
+  margin: 5px;
+}
+
+#contact #cwrapper #cLinks {
+  width: 30%;
+  margin: 10px;
+}
+
+#contact #cwrapper #cLinks article {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#contact #cwrapper #cLinks article:hover {
+  color: #000;
+}
+
+#contact #cwrapper #cLinks article span {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#contact #cwrapper #cLinks article p {
+  text-align: center;
 }
 
 #links {
