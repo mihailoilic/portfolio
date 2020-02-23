@@ -1,5 +1,6 @@
 $gradient: linear-gradient(135deg, #9039c1 25%,#1939ca 50%, #19a2ca 90%);
 $gradient2: linear-gradient(to right, #19a2ca, #9039c1);
+$gradient3: linear-gradient(-30deg,#5d4ee2 30%, #9039c1);
 $dark: #252525;
 @font-face {
     src: url("Dosis.ttf");
@@ -26,7 +27,7 @@ html {
 @mixin h2w {
     h2 {
         border: none;
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.8), 1px 1px 5px rgba(0,0,0,0.8);
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.5), 1px 1px 5px rgba(0,0,0,0.7);
     }
 }
 // GLOBALNO
@@ -66,22 +67,22 @@ h3 {
     border: 1px solid #fff;
     border-radius: 5px;
     transition: background-color .5s;
-}
-.dugme:hover {
-    background-color: #fff;
-}
-.dugme:hover span{
-    background: $gradient2;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    font-weight: 700;
+    &:hover {
+        background-color: #fff;
+    }
+    &:hover span {
+        background: $gradient2;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        font-weight: 700;
+    }
 }
 #header {
     position: relative;
     background: $gradient;
-    background-size: 400% 400%;
+    background-size: 600% 600%;
     animation: pozadina 15s ease-out infinite;
     height: 100vh;
     width: 100%; 
@@ -109,18 +110,18 @@ h3 {
 }
 #dole {
     position: relative;
-    bottom: -100px;
+    bottom: 50px;
     font-size: 2em;
     animation: dole 5s ease-out infinite;
 }
 @keyframes dole {
     0% {
         opacity: 0;
-        bottom: -40px;
+        bottom: 50px;
     }
     20% {
         opacity: 1;
-        bottom: -100px;
+        bottom: 10px;
     }
 }
 #gore {
@@ -302,14 +303,10 @@ section {
     background-size: cover;
     background-position: 0% 0%;
     @include h2w;
-}
-#swrapper {
-    @include flex(center);
-    flex-wrap: wrap;
-    width: 100%;
-    //.sdiv {
-   //     @include flex(space-evenly);
-        flex-grow: 3;
+    #swrapper {
+        @include flex(center);
+        flex-wrap: wrap;
+        width: 100%;
         article {
             width: 200px;
             height: 270px;
@@ -339,7 +336,28 @@ section {
                 }
             }
         }
-    //}
+    }
+}
+#about {
+    #awrapper {
+        @include flex(space-around);
+        img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: brightness(50%);
+            margin: 30px;
+        }
+        p {
+            margin: 30px;
+        }
+    }
+}
+#contact {
+    background: $gradient3;
+    @include h2w;
+    min-height: 700px;
 }
 #links {
     min-height: 300px;
