@@ -45,9 +45,9 @@ ul {
     box-sizing: border-box;
 }
 h1 {
-    font-size: 2.4em;
+    font-size: 3em;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    font-weight: 100;
+    font-weight: 400;
 }
 h2 {
     padding: 10px;
@@ -87,20 +87,58 @@ h3 {
     height: 100vh;
     width: 100%; 
     z-index: 2;
-    @include flex(center, center, column);
+    overflow: hidden;
+    @include flex(center);
+    flex-wrap: wrap;
     @include h2w;
-    h2 {
-        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-        font-size: 1.3em;
-        padding: 0px;
-    }
+    overflow: hidden;
+    width: 100%;
     img {
         width: 400px;
+        margin: 20px;
+        animation: logo 1s ease-in-out;
     }
-    .dugme {
-        margin-top: 50px;
-        padding: 8px 20px;
-        font-size: 1.1em;
+    @keyframes logo {
+        0% {
+            opacity: 0;
+            transform: scale(0.3,0.3);
+            margin-left: 17%;
+            margin-top: 20%;
+        }
+        30% {
+            margin-left: 19%;
+        }
+        100% {
+            opacity: 1;
+            margin: 20px;
+            
+        }
+    }
+    #hNaslov {
+        @include flex(flex-start, flex-start, column);
+        animation: naslov 1s ease-in-out;
+        margin: 30px;
+        h2 {
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            font-size: 1.5em;
+            padding: 0px;
+        }
+        .dugme {
+            margin-top: 30px;
+            padding: 8px 20px;
+            font-size: 1.1em;
+        }
+    }
+    @keyframes naslov {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
 @keyframes pozadina {

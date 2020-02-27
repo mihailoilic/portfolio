@@ -48,9 +48,9 @@ ul {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 3em;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  font-weight: 100;
+  font-weight: 400;
 }
 
 h2 {
@@ -101,19 +101,24 @@ h3 {
   height: 100vh;
   width: 100%;
   z-index: 2;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
 }
 
 #header h2 {
@@ -121,20 +126,100 @@ h3 {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
-#header h2 {
+#header img {
+  width: 400px;
+  margin: 20px;
+  -webkit-animation: logo 1s ease-in-out;
+          animation: logo 1s ease-in-out;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3, 0.3);
+            transform: scale(0.3, 0.3);
+    margin-left: 17%;
+    margin-top: 20%;
+  }
+  30% {
+    margin-left: 19%;
+  }
+  100% {
+    opacity: 1;
+    margin: 20px;
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3, 0.3);
+            transform: scale(0.3, 0.3);
+    margin-left: 17%;
+    margin-top: 20%;
+  }
+  30% {
+    margin-left: 19%;
+  }
+  100% {
+    opacity: 1;
+    margin: 20px;
+  }
+}
+
+#header #hNaslov {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-animation: naslov 1s ease-in-out;
+          animation: naslov 1s ease-in-out;
+  margin: 30px;
+}
+
+#header #hNaslov h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 0px;
 }
 
-#header img {
-  width: 400px;
-}
-
-#header .dugme, #header #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #header button, #header #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #header article {
-  margin-top: 50px;
+#header #hNaslov .dugme, #header #hNaslov #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #header #hNaslov button, #header #hNaslov #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #header #hNaslov article {
+  margin-top: 30px;
   padding: 8px 20px;
   font-size: 1.1em;
+}
+
+@-webkit-keyframes naslov {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes naslov {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes pozadina {
