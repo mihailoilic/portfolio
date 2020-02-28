@@ -8,10 +8,29 @@
   }
 }
 
-/*1000*/
+/* 1000px */
 @media only screen and (max-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+  #header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header img {
+    width: 300px;
+  }
+  #pwrapper .proj {
+    width: 40%;
+    height: 220px;
+  }
+  #pwrapper .proj figure figcaption p {
+    height: 105px;
+  }
   #links {
-    width: 100%;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
