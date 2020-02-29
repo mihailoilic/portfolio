@@ -35,3 +35,108 @@
         width: 95%;
     }
 }
+/* 800px */
+@media only screen and (max-width: 800px){
+    html {
+        font-size: 16px;
+    }
+    #pwrapper {
+        .proj {
+            width: 70%;
+            height: 220px;
+            figure {
+                figcaption {
+                    p {
+                        height: 105px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* 700px */
+@media only screen and (max-width: 700px){
+    #header {
+        #MeniBtn, #MeniClose {
+            width: 60px;
+            height: 60px;
+            .linija {
+                height: 4px;
+                margin: 3px 0px;
+            }
+        }
+        #MeniClose{
+            #linija1, #linija2 {
+                top: 30px;
+            }
+        }
+    }
+    #gore {
+        width: 60px;
+        height: 60px;
+    }
+    #about {
+        #awrapper {
+            flex-direction: column;
+            p {
+                max-width: 500px;
+            }
+        }
+    }
+    #contact {
+        #cwrapper {
+            flex-direction: column;
+            align-items: center;
+            #forma {
+                width: 90%;
+            }
+            #cLinks {
+                width: 90%;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-between;
+                article {
+                    width: 27vw;
+                    min-height: 130px;
+                }
+            }
+        }
+    }
+}
+/* 550px */
+@media only screen and (max-width: 550px){
+    #header {
+        font-size: 14px;
+        img {
+            width: 50%;
+        }
+    }
+    #pwrapper {
+        .proj {
+            width: 85%;
+            height: 220px;
+        }
+    }
+    #skills {
+        #swrapper {
+            article {
+                width: 90%;
+                height: 150px;
+                flex-direction: row;
+                justify-content: space-between;
+                p, h3 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    #links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin-top: 50px;
+        }
+    }
+    
+}

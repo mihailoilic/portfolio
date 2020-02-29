@@ -33,4 +33,115 @@
     width: 95%;
   }
 }
+
+/* 800px */
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+  #pwrapper .proj {
+    width: 70%;
+    height: 220px;
+  }
+  #pwrapper .proj figure figcaption p {
+    height: 105px;
+  }
+}
+
+/* 700px */
+@media only screen and (max-width: 700px) {
+  #header #MeniBtn, #header #MeniClose {
+    width: 60px;
+    height: 60px;
+  }
+  #header #MeniBtn .linija, #header #MeniClose .linija {
+    height: 4px;
+    margin: 3px 0px;
+  }
+  #header #MeniClose #linija1, #header #MeniClose #linija2 {
+    top: 30px;
+  }
+  #gore {
+    width: 60px;
+    height: 60px;
+  }
+  #about #awrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about #awrapper p {
+    max-width: 500px;
+  }
+  #contact #cwrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact #cwrapper #forma {
+    width: 90%;
+  }
+  #contact #cwrapper #cLinks {
+    width: 90%;
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #contact #cwrapper #cLinks article {
+    width: 27vw;
+    min-height: 130px;
+  }
+}
+
+/* 550px */
+@media only screen and (max-width: 550px) {
+  #header {
+    font-size: 14px;
+  }
+  #header img {
+    width: 50%;
+  }
+  #pwrapper .proj {
+    width: 85%;
+    height: 220px;
+  }
+  #skills #swrapper article {
+    width: 90%;
+    height: 150px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #skills #swrapper article p, #skills #swrapper article h3 {
+    font-size: 1em;
+  }
+  #links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #links p {
+    margin-top: 50px;
+  }
+}
 /*# sourceMappingURL=responsive.css.map */

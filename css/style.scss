@@ -78,7 +78,7 @@ h2 {
     }
 }
 h3 {
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 500;
 }
 .dugme {
@@ -306,6 +306,9 @@ h3 {
     z-index: 1;
     font-size: 1.7em;
     padding-bottom: 0.1em;
+    &:hover {
+        background: rgba(0,0,0,0.6);
+    }
 }
 section {
     padding: 20px 5px;
@@ -398,14 +401,14 @@ section {
             box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
             background: rgba(0,0,0,0.7);
             span {
-                font-size: 6em;
+                font-size: 120px;
                 margin-bottom: 10px;
                 &.sLogo {
-                    font-size: 5em;
+                    font-size: 100px;
                 }
             }
             p {
-                font-size: 0.8em;
+                font-size: 18px;
                 &.high {
                     color: #23c258;
                 }
@@ -472,6 +475,8 @@ section {
                 button {
                     @extend .dugme;
                     border: none;
+                    border-radius: 15px;
+                    padding: 10px;
                     width: 120px;
                     margin: 5px;
                 }
@@ -481,11 +486,11 @@ section {
             width: 30%;
             margin: 10px;
             article {
-                padding: 15px;
+                padding: 20px;
                 margin-bottom: 10px;
                 border-radius: 15px;
                 width: 100%;
-                @include flex(center, center, column);
+                @include flex(flex-start, center, column);
                 @extend .dugme;
                 border: none;
                 background: rgba(0,0,0,0.4);
@@ -502,7 +507,6 @@ section {
             }
         }
     }
-    
 }
 #links {
     padding: 30px;
