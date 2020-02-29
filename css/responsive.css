@@ -109,29 +109,11 @@
     height: 220px;
   }
   #skills #swrapper {
-    margin-top: 30px;
+    margin-top: 15px;
   }
   #skills #swrapper article {
-    width: 90%;
-    height: 130px;
+    width: 40%;
     margin: 10px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #skills #swrapper article span {
-    font-size: 90px;
-    margin: 0px;
-  }
-  #skills #swrapper article span.sLogo {
-    font-size: 75px;
-  }
-  #skills #swrapper article span.smaller {
-    font-size: 75px;
   }
   #skills #swrapper article p, #skills #swrapper article h3 {
     font-size: 1em;
