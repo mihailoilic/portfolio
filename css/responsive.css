@@ -36,9 +36,6 @@
 
 /* 800px */
 @media only screen and (max-width: 800px) {
-  html {
-    font-size: 16px;
-  }
   #pwrapper .proj {
     width: 70%;
     height: 220px;
@@ -104,19 +101,20 @@
 
 /* 550px */
 @media only screen and (max-width: 550px) {
-  #header {
-    font-size: 14px;
-  }
   #header img {
-    width: 50%;
+    width: 65%;
   }
   #pwrapper .proj {
     width: 85%;
     height: 220px;
   }
+  #skills #swrapper {
+    margin-top: 30px;
+  }
   #skills #swrapper article {
     width: 90%;
-    height: 150px;
+    height: 130px;
+    margin: 10px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -125,8 +123,51 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  #skills #swrapper article span {
+    font-size: 90px;
+    margin: 0px;
+  }
+  #skills #swrapper article span.sLogo {
+    font-size: 75px;
+  }
+  #skills #swrapper article span.smaller {
+    font-size: 75px;
+  }
   #skills #swrapper article p, #skills #swrapper article h3 {
     font-size: 1em;
+  }
+  #contact #cwrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact #cwrapper #forma {
+    width: 90%;
+  }
+  #contact #cwrapper #cLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #contact #cwrapper #cLinks article {
+    width: 100%;
+    padding: 10px;
+    min-height: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   #links {
     -webkit-box-orient: vertical;

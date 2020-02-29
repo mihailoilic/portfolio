@@ -649,6 +649,10 @@ section {
   font-size: 100px;
 }
 
+#skills #swrapper article span.smaller {
+  font-size: 110px;
+}
+
 #skills #swrapper article p {
   font-size: 18px;
 }
@@ -809,7 +813,7 @@ section {
 
 #contact #cwrapper #cLinks article span {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #contact #cwrapper #cLinks article p {
