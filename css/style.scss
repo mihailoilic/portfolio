@@ -1,7 +1,7 @@
 $gradient: linear-gradient(135deg, #9039c1 25%,#1939ca 50%, #19a2ca 90%);
 $gradient2: linear-gradient(to right, #19a2ca, #9039c1);
 $gradient3: linear-gradient(135deg, #9039c1 25%, #19a2ca 100%);
-$g3trans: radial-gradient(rgba(82, 29, 109, 0.9) 20%, rgba(60, 17, 117, 0.7) 40%,  rgba(0,0,0,0.7) 60%);
+$g3trans: radial-gradient(rgba(64, 29, 109, 0.9) 20%, rgba(60, 17, 117, 0.7) 40%,  rgba(0,0,0,0.7) 60%);
 $dark: #252525;
 @font-face {
     src: url("Dosis.ttf");
@@ -406,7 +406,6 @@ section {
             @include flex(center, center, column);
             border-radius: 15px;
             box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-            transition: background-position 1s;
             background: {
                 image: $g3trans;
                 size: 500% 500%;
@@ -435,7 +434,8 @@ section {
                 }
             }
             &:hover {
-                background-position: 50% 50%;
+                background-position: 100% 100%;
+                transition: background-position 1s;
             }
         }
     }
