@@ -1,10 +1,10 @@
 @font-face {
-  src: url("Dosis.ttf");
+  src: url("../fonts/Dosis.ttf");
   font-family: Dosis;
 }
 
 @font-face {
-  src: url("Dosis-Light.ttf");
+  src: url("../fonts/Dosis-Light.ttf");
   font-family: DosisLight;
 }
 
@@ -242,8 +242,8 @@ section {
   text-shadow: 2px 2px 5px #000;
   opacity: 0;
   will-change: opacity, visibility, transform;
-  -webkit-transition: opacity 0.5s, visibility 0.5s;
-  transition: opacity 0.5s, visibility 0.5s;
+  -webkit-transition: opacity .5s, visibility .5s;
+  transition: opacity .5s, visibility .5s;
 }
 
 #header #Meni:target {
@@ -285,10 +285,10 @@ section {
   -webkit-transform: scale(0, 0);
           transform: scale(0, 0);
   will-change: transform;
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  transition: -webkit-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  -webkit-transition: -webkit-transform .5s ease-out;
+  transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+  transition: transform .5s ease-out, -webkit-transform .5s ease-out;
 }
 
 #header #Meni ul li {
@@ -752,6 +752,8 @@ section {
   border: none;
   border-radius: 15px;
   width: 100%;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 #contact #cwrapper #forma input:focus, #contact #cwrapper #forma textarea:focus, #contact #cwrapper #forma button:focus {
@@ -822,9 +824,9 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -898,5 +900,6 @@ section {
 
 #links p {
   margin: 20px 0px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,11 @@ $gradient3: linear-gradient(135deg, #9039c1 25%, #19a2ca 100%);
 $g3trans: radial-gradient(rgba(64, 29, 109, 0.9) 20%, rgba(60, 17, 117, 0.7) 40%,  rgba(0,0,0,0.7) 60%);
 $dark: #252525;
 @font-face {
-    src: url("Dosis.ttf");
+    src: url("../fonts/Dosis.ttf");
     font-family: Dosis;
 }
 @font-face {
-    src: url("Dosis-Light.ttf");
+    src: url("../fonts/Dosis-Light.ttf");
     font-family: DosisLight;
 }
 @mixin flex($justify, $align: center, $direction: row){
@@ -182,7 +182,7 @@ section {
         text-shadow: 2px 2px 5px #000;
         opacity: 0;
         will-change: opacity, visibility, transform;
-        transition: opacity 0.5s, visibility 0.5s;
+        transition: opacity .5s, visibility .5s;
         &:target{
             opacity: 1;
             visibility: visible;
@@ -204,7 +204,7 @@ section {
             @include flex(center, center, column);
             transform: scale(0,0);
             will-change: transform;
-            transition: transform 0.5s ease-out;
+            transition: transform .5s ease-out;
             li {
                 padding: 10px;
                 margin: 10px;
@@ -482,6 +482,7 @@ section {
                 border: none;
                 border-radius: 15px;
                 width: 100%;
+                transition: background-color .3s;
                 &:focus {
                     background: rgba(0,0,0,0.6);
                     outline: none;
@@ -517,7 +518,7 @@ section {
                 margin-bottom: 10px;
                 border-radius: 15px;
                 width: 100%;
-                @include flex(flex-start, center, column);
+                @include flex(center, center, column);
                 @extend .dugme;
                 border: none;
                 background: rgba(0,0,0,0.4);
@@ -553,5 +554,6 @@ section {
         }
     p {
         margin: 20px 0px;
+        text-align: center;
     }
 }
