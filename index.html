@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/responsive.min.css" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <meta name="description" content="Hi. My name's Mihailo Ilić and I'm a web developer from Serbia. Here you can learn more about me, and if you have any questions feel free to contact me."/>
-    <meta name="keywords" content="Mihailo, Ilic, portfolio, web, developer"/>
+    <meta name="description" content="I'm a web developer from Serbia. I offer web design, UI/UX design and SEO services. You can learn more about me here, and if you have any questions feel free to contact me."/>
+    <meta name="keywords" content="Mihailo, Ilic, web, developer, seo, design"/>
     <meta name="author" content="Mihailo Ilic"/>
 </head>
 <body>
@@ -25,6 +25,7 @@
             </a>
             <ul>
                 <li><a href="#header">Home</a></li>
+                <li><a href="#service">Service</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">My skills</a></li>
                 <li><a href="#about">About me</a></li>
@@ -44,17 +45,48 @@
         <div id="hNaslov">
             <h1>Mihailo Ilić</h1>
             <h2>Web developer</h2>
-            <a href="#projects" class="dugme">
+            <a href="#service" class="dugme">
                 <span>Learn more about me</span>
             </a>
         </div>
         <!-- STRELICA -->
         <div id="dole">
-            <a href="#projects">
+            <a href="#service">
                 <span class="fas fa-chevron-down"></span>
             </a>
         </div>
     </header>
+    <!-- STRELICA KA VRHU -->
+    <a href="#header">
+        <span id="gore" class="fas fa-chevron-up"></span>
+    </a>
+    <!-- SERVICES -->
+    <section id="service">
+        <h2>Services that I provide</h2>
+        <div id="scwrapper" class="okvir">
+            <article>
+                <img src="img/webDesign.png" alt="web design"/>
+                <div class="service">
+                    <h3>Web Design</h3>
+                    <p>Website development by the latest standards. I always combine the best techniques and solutions. It's time to get a fresh website and be one step ahead of your competition!</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/uidesign.png" alt="ui ux deisgn"/>
+                <div class="service">
+                    <h3>UI/UX Design</h3>
+                    <p>My job is to build an interface that minimizes the knowledge gap between what users know prior to coming to your site and what they must know to use it properly.</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/seo.png" alt="seo"/>
+                <div class="service">
+                    <h3>Search Engine Optimization</h3>
+                    <p>The vast majority of online experiences begin with a search engine! SEO is the magic you have to work on your website in order to make Google include your website as one of the top results.</p>
+                </div>
+            </article>
+        </div>
+    </section>
     <!-- PROJEKTI -->
     <section id="projects">
         <h2>Projects</h2>
@@ -65,7 +97,7 @@
                     <figcaption>
                         <h3>Montana Invest</h3>
                         <span class="lm">Learn more...</span>
-                        <p>This was the first website that I designed. Although the information it contains is invented I put efforts into making it look nice. Only HTML5 and CSS3 were implemented here, as well as some of the new CSS3 features still not supported by some browsers.</p>
+                        <p>This was the first website that I designed. Although the information it contains is invented I put efforts into making it look nice. Only HTML and CSS were implemented here, as well as some of the new CSS features still not supported by some browsers.</p>
                         <a href="https://mihailoilic.github.io/mihailo" target="_blank" class="dugme">
                             <span>Check it out</span> 
                         </a>
@@ -78,7 +110,7 @@
                     <figcaption>
                         <h3>Portfolio</h3>
                         <span class="lm">Learn more...</span>
-                        <p>My most recent website and the first attempt to promote myself. I tried to make it simple, yet beautiful - thanks to the gradient background and blur. Only HTML5 and CSS3 (this time with SASS) were used.</p>
+                        <p>My most recent static website and the first attempt to promote myself. I tried to make it simple, yet beautiful - thanks to the gradient background and blur. Only HTML and CSS (this time with SASS) were used.</p>
                         <a href="#" class="dugme">
                             <span>Check it out</span> 
                         </a>
@@ -91,7 +123,7 @@
                     <figcaption>
                         <h3>Hotel Clarion</h3>
                         <span class="lm">Learn more...</span>
-                        <p>A simple website about a hotel. Simplicity is sometimes the key.</p>
+                        <p>A simple static website about a hotel. Simplicity is sometimes the key. Only HTML and CSS were used.</p>
                         <a href="#" class="dugme">
                             <span>Check it out</span> 
                         </a>
@@ -104,7 +136,7 @@
                     <figcaption>
                         <h3>Non Stop News</h3>
                         <span class="lm">Learn more...</span>
-                        <p>A simple website where news can be found. Non-stop news keeps people updated on important things.</p>
+                        <p>A dynamic website where news can be found. Non-stop news keeps people updated on important things. Made by using HTML, CSS and JS.</p>
                         <a href="#" class="dugme">
                             <span>Check it out</span> 
                         </a>
@@ -135,10 +167,6 @@
                 </figure>
             </article>
         </div>
-        <!-- STRELICA KA VRHU -->
-        <a href="#header">
-            <span id="gore" class="fas fa-chevron-up"></span>
-        </a>
     </section>
     <!-- SKILLS -->
     <section id="skills">
@@ -146,27 +174,27 @@
         <div id="swrapper" class="okvir">
             <article class="skill">
                 <span class="fab fa-html5"></span>
-                <h3>HTML5</h3>
+                <h3>HTML</h3>
                 <p class="high">Proficient</p>
             </article>
             <article class="skill">
                 <span class="smaller fab fa-css3"></span>
-                <h3>CSS3</h3>
+                <h3>CSS / SASS</h3>
                 <p class="high">Proficient</p>
             </article>
             <article class="skill">
                 <span class="fas fa-database"></span>
-                <h3>SQL</h3>
+                <h3>Access / SQL</h3>
                 <p class="medium">Competent</p>
             </article>
             <article class="skill">
                 <span class="sLogo">C#</span>
-                <h3>C#</h3>
+                <h3>Visual C#</h3>
                 <p class="medium">Competent</p>
             </article>
             <article class="skill">
-                <span class="fab fa-bootstrap"></span>
-                <h3>Bootstrap</h3>
+                <span class="smaller fas fa-search"></span>
+                <h3>SEO</h3>
                 <p class="low">Beginner</p>
             </article>
             <article class="skill">
@@ -184,6 +212,7 @@
             <div>
                 <p>Hi. My name's Mihailo Ilić and I'm a web developer from Serbia. I graduated from First Belgrade Gymnasium. I've recently started studying IT/Web programming at ICT College because I've always been interested in computers and technology.</p>
                 <p>I'd describe my personality as peaceful and friendly. I'm also diligent and I always pay attention to details while doing my projects. Although my skills are limited at this moment, I will continuously try to improve them through my studies, projects etc.</p>
+                <p>For more information feel free to <a href="#contact">contact</a> me by using the form or the links below.</p>
             </div> 
         </div>
     </section>
@@ -202,6 +231,12 @@
                 </div>
             </form>
             <div id="cLinks">
+                <a href="tel:+38160123456" target="_blank">
+                    <article>
+                        <span class="fab fa-whatsapp"></span>
+                        <p>Contact me on WhatsApp</p>
+                    </article>
+                </a>
                 <a href="mailto:mihailo.ilic.41.19@ict.edu.rs" target="_blank">
                     <article>
                         <span class="fas fa-envelope"></span>
@@ -211,13 +246,13 @@
                 <a href="https://www.linkedin.com/" target="_blank">
                     <article>
                         <span class="fab fa-linkedin"></span>
-                        <p>My LinkedIn profile</p>
+                        <p>Visit my LinkedIn profile</p>
                     </article>
                 </a>
                 <a href="https://github.com/mihailoilic" target="_blank">
                     <article>
                         <span class="fab fa-github"></span>
-                        <p>My Github projects</p>
+                        <p>See my Github projects</p>
                     </article>
                 </a>
             </div>

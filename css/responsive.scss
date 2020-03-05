@@ -3,9 +3,31 @@
     .okvir {
         width: 100%;
     }
+    #pwrapper {
+        .proj {
+            width: 30%;     
+        }
+    }
     // SKILLS
     #swrapper {
         max-width: 800px;
+    }
+}
+//  ------  1250px  ------
+@media only screen and (max-width: 1250px){
+    // PROJEKTI
+    #pwrapper {
+        .proj {
+            width: 40%;
+            height: 220px;
+            figure {
+                figcaption {
+                    p {
+                        height: 105px;
+                    }
+                }
+            }
+        }
     }
 }
 //  ------  1000px  ------
@@ -20,16 +42,22 @@
             width: 300px;
         }
     }
-    // PROJEKTI
-    #pwrapper {
-        .proj {
-            width: 40%;
-            height: 220px;
-            figure {
-                figcaption {
-                    p {
-                        height: 105px;
-                    }
+    // SERVICE
+    #scwrapper {
+        flex-direction: column;
+        align-items: center;
+        article {
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-start;
+            img {
+                width: 40%;
+                height: 150px;
+                margin: 10px;
+            }
+            .service {
+                p {
+                    margin: 10px;
                 }
             }
         }
@@ -53,6 +81,15 @@
                         height: 105px;
                     }
                 }
+            }
+        }
+    }
+    // ABOUT
+    #about {
+        #awrapper {
+            flex-direction: column;
+            p {
+                max-width: 500px;
             }
         }
     }
@@ -80,15 +117,6 @@
         width: 60px;
         height: 60px;
     }
-    // ABOUT
-    #about {
-        #awrapper {
-            flex-direction: column;
-            p {
-                max-width: 500px;
-            }
-        }
-    }
     // KONTAKT
     #contact {
         #cwrapper {
@@ -98,23 +126,40 @@
                 width: 90%;
             }
             #cLinks {
+                margin-top: 50px;
                 width: 90%;
-                margin-top: 60px;
-                display: flex;
-                justify-content: space-between;
                 article {
-                    width: 27vw;
-                    min-height: 150px;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 10px auto;
+                    flex-direction: row;
+                    //justify-content: center;
                 }
             }
         }
-    }
 }
 //  ------  550px  ------
 @media only screen and (max-width: 550px){
     #header {
         img {
             width: 65%;
+        }
+    }
+    // SERVICE
+    #scwrapper {
+        article {
+            width: 100%;
+            flex-direction: column;
+            img {
+                width: 80%;
+                height: 150px;
+                margin: 10px;
+            }
+            .service {
+                p {
+                    margin: 10px;
+                }
+            }
         }
     }
     // SKILLS
@@ -130,27 +175,7 @@
             }
         }
     }
-    // KONTAKT
-    #contact {
-        #cwrapper {
-            flex-direction: column;
-            align-items: center;
-            #forma {
-                width: 90%;
-            }
-            #cLinks {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                article {
-                    width: 100%;
-                    padding: 10px;
-                    min-height: 50px;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                }
-            }
-        }
+    
     }
     // FOOTER
     #links {

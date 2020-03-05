@@ -82,6 +82,9 @@ h3 {
     font-size: 20px;
     font-weight: 500;
 }
+p {
+    font-family: DosisLight;
+}
 .dugme {
     padding: 5px 10px;
     display: inline-block;
@@ -206,12 +209,12 @@ section {
             will-change: transform;
             transition: transform .5s ease-out;
             li {
-                padding: 10px;
+                padding: 5px;
                 margin: 10px;
                 font-size: 1.4em;
-                transition: transform .1s;
+                transition: transform .15s;
                 &:hover {
-                    transform: scale(1.25,1.3);
+                    transform: scale(1.20,1.25);
                     text-shadow: 0px 0px 1px #fff;
                 }
             }
@@ -319,6 +322,42 @@ section {
         background: rgba(0,0,0,0.6);
     }
 }
+// SERVICE 
+#scwrapper {
+    @include flex(space-evenly, auto, row);
+    padding: 30px 20px;
+    article {
+        width: 28%;
+        padding: 20px;
+        margin: 15px;
+        @include flex(center, center, column);
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+        transition: box-shadow .5s;
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .service {
+            text-align: center;
+            p {
+                text-align: center;
+                font-size: 0.9em;
+                margin: 10px 0px;
+                
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 1.3em;
+            }
+        }
+        &:hover {
+            box-shadow: 15px 15px 70px rgba(144, 57, 193,0.6);
+        }
+    }
+}
 // PROJEKTI
 #pwrapper {
     @include flex(center);
@@ -416,6 +455,7 @@ section {
                 margin-bottom: 10px;
                 &.sLogo {
                     font-size: 100px;
+                    font-weight: 600;
                 }
                 &.smaller {
                     font-size: 110px;
@@ -454,10 +494,13 @@ section {
             margin: 10px;
         }
         p {
-            margin: 10px;
+            margin: 15px;
             text-align: justify;
             max-width: 800px;
-            text-indent: 1em;
+            font-size: 0.9em;
+            a {
+                color: #a16bc0;
+            }
         }
     }
 }
@@ -469,9 +512,9 @@ section {
         @include flex(space-between, flex-start, row);
         padding: 30px 0px;
         max-width: 900px;
+        font-size: 0.9em;
         #forma {
-            width: 60%;
-            font-size: 1em;
+            width: 58%;
             margin: 10px;
             input, textarea, button {
                 font-size: inherit;
@@ -511,14 +554,14 @@ section {
             }
         }
         #cLinks {
-            width: 30%;
+            width: 35%;
             margin: 10px;
             article {
-                padding: 10px;
+                padding: 15px;
                 margin-bottom: 10px;
                 border-radius: 15px;
                 width: 100%;
-                @include flex(center, center, column);
+                @include flex(flex-start);
                 @extend .dugme;
                 border: none;
                 background: rgba(0,0,0,0.4);
@@ -526,11 +569,11 @@ section {
                     color: #000;
                 }
                 span {
-                    font-size: 2em;
-                    margin: 10px;
+                    font-size: 1.8em;
+                    margin: 5px;
                 }
                 p {
-                    margin: 10px;
+                    margin: 5px;
                     text-align: center;
                 }
             }
@@ -543,6 +586,7 @@ section {
     @include flex(space-between, flex-start,row);
     flex-wrap: wrap;
     width: 950px;
+    font-size: 0.9em;
     ul {
             @include flex(center, center, column);
             li {
