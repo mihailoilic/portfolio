@@ -566,99 +566,6 @@ section {
           box-shadow: 15px 15px 70px rgba(144, 57, 193, 0.6);
 }
 
-#pwrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 30px 0px;
-}
-
-#pwrapper .proj {
-  width: 400px;
-  height: 250px;
-  margin: 20px;
-  border-radius: 15px;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
-#pwrapper .proj figure {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-#pwrapper .proj figure img {
-  width: inherit;
-  height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px;
-}
-
-#pwrapper .proj figure figcaption {
-  position: absolute;
-  width: 100%;
-  height: 30%;
-  top: 70%;
-  background: rgba(0, 0, 0, 0.65);
-  border-radius: 0px 0px 15px 15px;
-  padding: 10px 15px;
-  text-align: center;
-  will-change: top, height;
-  -webkit-transition: top .5s ease-out, height .5s ease-out, padding .5s ease-out, border-radius .5s ease-out;
-  transition: top .5s ease-out, height .5s ease-out, padding .5s ease-out, border-radius .5s ease-out;
-}
-
-#pwrapper .proj figure figcaption .lm, #pwrapper .proj figure figcaption p {
-  color: #ddd;
-  font-size: 0.8em;
-}
-
-#pwrapper .proj figure figcaption .dugme, #pwrapper .proj figure figcaption #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #pwrapper .proj figure figcaption button, #pwrapper .proj figure figcaption #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #pwrapper .proj figure figcaption article {
-  display: none;
-  font-size: 0.9em;
-}
-
-#pwrapper .proj figure figcaption p {
-  margin: 15px 0px;
-  height: 130px;
-  display: none;
-}
-
-#pwrapper .proj figure:hover figcaption {
-  height: 100%;
-  top: 0px;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px;
-}
-
-#pwrapper .proj figure:hover figcaption p {
-  display: block;
-}
-
-#pwrapper .proj figure:hover figcaption .dugme, #pwrapper .proj figure:hover figcaption #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #pwrapper .proj figure:hover figcaption button, #pwrapper .proj figure:hover figcaption #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #pwrapper .proj figure:hover figcaption article {
-  display: inline-block;
-}
-
-#pwrapper .proj figure:hover figcaption .lm {
-  display: none;
-}
-
 #skills {
   background-image: url("../img/bgSkills.jpg");
   background-repeat: no-repeat;
@@ -750,6 +657,99 @@ section {
   background-position: 100% 100%;
   -webkit-transition: background-position 1s;
   transition: background-position 1s;
+}
+
+#pwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0px;
+}
+
+#pwrapper .proj {
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+#pwrapper .proj figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#pwrapper .proj figure img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+#pwrapper .proj figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 70%;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 0px 0px 15px 15px;
+  padding: 10px 15px;
+  text-align: center;
+  will-change: top, height;
+  -webkit-transition: top .5s ease-out, height .5s ease-out, padding .5s ease-out, border-radius .5s ease-out;
+  transition: top .5s ease-out, height .5s ease-out, padding .5s ease-out, border-radius .5s ease-out;
+}
+
+#pwrapper .proj figure figcaption .lm, #pwrapper .proj figure figcaption p {
+  color: #ddd;
+  font-size: 0.8em;
+}
+
+#pwrapper .proj figure figcaption .dugme, #pwrapper .proj figure figcaption #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #pwrapper .proj figure figcaption button, #pwrapper .proj figure figcaption #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #pwrapper .proj figure figcaption article {
+  display: none;
+  font-size: 0.9em;
+}
+
+#pwrapper .proj figure figcaption p {
+  margin: 15px 0px;
+  height: 130px;
+  display: none;
+}
+
+#pwrapper .proj figure:hover figcaption {
+  height: 100%;
+  top: 0px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+
+#pwrapper .proj figure:hover figcaption p {
+  display: block;
+}
+
+#pwrapper .proj figure:hover figcaption .dugme, #pwrapper .proj figure:hover figcaption #contact #cwrapper #forma #btnwrapper button, #contact #cwrapper #forma #btnwrapper #pwrapper .proj figure:hover figcaption button, #pwrapper .proj figure:hover figcaption #contact #cwrapper #cLinks article, #contact #cwrapper #cLinks #pwrapper .proj figure:hover figcaption article {
+  display: inline-block;
+}
+
+#pwrapper .proj figure:hover figcaption .lm {
+  display: none;
 }
 
 #about #awrapper {

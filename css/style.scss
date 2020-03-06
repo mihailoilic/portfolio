@@ -358,6 +358,62 @@ section {
         }
     }
 }
+// SKILLS
+#skills {
+    background: {
+        image: url("../img/bgSkills.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: 0% 0%;
+    }
+    @include h2w;
+    #swrapper {
+        @include flex(center);
+        flex-wrap: wrap;
+        width: 100%;
+        article {
+            width: 200px;
+            height: 270px;
+            margin: 20px;
+            padding: 20px;
+            @include flex(center, center, column);
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+            background: {
+                image: $g3trans;
+                size: 500% 500%;
+                position: 0% 0%;
+            }
+            span {
+                font-size: 120px;
+                margin-bottom: 10px;
+                &.sLogo {
+                    font-size: 100px;
+                    font-weight: 600;
+                }
+                &.smaller {
+                    font-size: 110px;
+                }
+            }
+            p {
+                font-size: 18px;
+                &.high {
+                    color: #23c258;
+                }
+                &.medium {
+                    color: #d1b63e;
+                }
+                &.low {
+                    color: #19a2ca;
+                }
+            }
+            &:hover {
+                background-position: 100% 100%;
+                transition: background-position 1s;
+            }
+        }
+    }
+}
 // PROJEKTI
 #pwrapper {
     @include flex(center);
@@ -420,62 +476,6 @@ section {
                 .lm {
                     display: none;
                 }
-            }
-        }
-    }
-}
-// SKILLS
-#skills {
-    background: {
-        image: url("../img/bgSkills.jpg");
-        repeat: no-repeat;
-        size: cover;
-        position: 0% 0%;
-    }
-    @include h2w;
-    #swrapper {
-        @include flex(center);
-        flex-wrap: wrap;
-        width: 100%;
-        article {
-            width: 200px;
-            height: 270px;
-            margin: 20px;
-            padding: 20px;
-            @include flex(center, center, column);
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-            background: {
-                image: $g3trans;
-                size: 500% 500%;
-                position: 0% 0%;
-            }
-            span {
-                font-size: 120px;
-                margin-bottom: 10px;
-                &.sLogo {
-                    font-size: 100px;
-                    font-weight: 600;
-                }
-                &.smaller {
-                    font-size: 110px;
-                }
-            }
-            p {
-                font-size: 18px;
-                &.high {
-                    color: #23c258;
-                }
-                &.medium {
-                    color: #d1b63e;
-                }
-                &.low {
-                    color: #19a2ca;
-                }
-            }
-            &:hover {
-                background-position: 100% 100%;
-                transition: background-position 1s;
             }
         }
     }
